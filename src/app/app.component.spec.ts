@@ -7,7 +7,7 @@ describe('AppComponent', () => {
       imports: [AppComponent],
     }).compileComponents();
   });
-
+//gazi hamid
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
