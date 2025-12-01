@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'src/assets/layout/layout.scss';
+@import 'primeicons/primeicons.css';
+@import 'src/assets/demo/demo.scss';
+
+/* ==================== FORM UTILITY CLASSES ==================== */
+
+// Flex utility sınıfları
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+// Form item'ları için genel container stil
+.form-item-container {
+  background: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  
+  &:hover {
+    border-color: var(--primary-color);
+    transition: border-color 0.2s ease;
+  }
+  
+  // Son item'in margin'ını kaldır
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Alt level container'lar için (örn: ortak firmalar)
+.sub-form-item-container {
+  background: var(--surface-ground);
+  border: 1px solid var(--surface-300);
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  
+  &:hover {
+    border-color: var(--primary-color-text);
+    transition: border-color 0.2s ease;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
